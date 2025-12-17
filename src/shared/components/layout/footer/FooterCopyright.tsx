@@ -3,7 +3,7 @@ import { paymentMethods } from "@/shared/constants/footer";
 
 export function FooterCopyright() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-300">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-2 border-t border-gray-300">
       <p className="text-sm text-gray-600">
         Shop.co © 2000-2023, All Rights Reserved
       </p>

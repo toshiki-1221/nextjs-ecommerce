@@ -1,4 +1,4 @@
-import { Hero } from "@/src/shared/components";
+import { Hero } from "@/src/features/home/components/hero";
 
 export default function Home() {
   return (
