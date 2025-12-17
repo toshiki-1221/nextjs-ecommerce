@@ -16,6 +16,7 @@ export function FooterCopyright() {
             width={40}
             height={24}
             className="object-contain"
+            style={{ width: "auto", height: "auto" }}
           />
         ))}
       </div>

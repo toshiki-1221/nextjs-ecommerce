@@ -11,6 +11,7 @@ export function HeaderLogo({ width, height }: HeaderLogoProps) {
         width={width}
         height={height}
         priority
+        style={{ width: "auto", height: "auto" }}
       />
     </Link>
   );

@@ -16,11 +16,11 @@ export function FooterBrand() {
         <span className="text-2xl font-bold text-black">SHOP.CO</span>
       </Link>
       <p className="text-sm text-gray-600 max-w-xs">
-        We have clothes that suits your style and which you're proud to wear.
-        From women to men.
+        We have clothes that suit your style and which you&apos;re proud to
+        wear. From women to men.
       </p>
       <div className="flex items-center gap-3">
-        {socialMediaLinks.map((social, index) => {
+        {socialMediaLinks.map((social) => {
           const Icon = socialIcons[social.name as keyof typeof socialIcons];
           if (!Icon) return null;
 
