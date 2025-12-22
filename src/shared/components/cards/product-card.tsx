@@ -24,7 +24,7 @@ export function ProductCard({
   return (
     <div className="flex flex-col gap-3">
       {/* 商品画像 */}
-      <div className="relative w-full aspect-square rounded-4xl overflow-hidden bg-gray-100">
+      <div className="relative w-full aspect-square rounded-[13.42px] md:rounded-4xl overflow-hidden bg-gray-100">
         <Image
           src={image}
           alt={title}
@@ -47,7 +47,7 @@ export function ProductCard({
             {Array.from({ length: 5 }).map((_, i) => (
               <Star
                 key={i}
-                className={`w-4 h-4 ${
+                className={`w-3 h-3 md:w-4 md:h-4 ${
                   i < Math.floor(rating)
                     ? "fill-yellow-400 text-yellow-400"
                     : i < rating
@@ -57,19 +57,23 @@ export function ProductCard({
               />
             ))}
           </div>
-          <span className="text-sm font-medium text-black">
+          <span className="text-xs md:text-sm font-medium text-black">
             {rating.toFixed(1)}/5
           </span>
         </div>
 
         {/* タイトル */}
-        <h3 className="text-base font-semibold text-black">{title}</h3>
+        <h3 className="text-sm md:text-base font-semibold text-black line-clamp-2">
+          {title}
+        </h3>
 
         {/* 価格 */}
         <div className="flex items-center gap-2">
-          <span className="text-lg font-semibold text-black">${price}</span>
+          <span className="text-base md:text-lg font-semibold text-black">
+            ${price}
+          </span>
           {originalPrice && originalPrice > price && (
-            <span className="text-base font-semibold text-gray-400 line-through">
+            <span className="text-sm md:text-base font-semibold text-gray-400 line-through">
               ${originalPrice}
             </span>
           )}
